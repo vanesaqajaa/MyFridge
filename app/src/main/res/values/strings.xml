@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">MyFridge</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Units -->
+    <string name="item">item</string>
+    <string name="milligram">mg</string>
+    <string name="gram">g</string>
+    <string name="kilogram">kg</string>
+    <string name="milliliter">mL</string>
+    <string name="liter">L</string>
+
+
+    <!-- Strings for delete all confirmation -->
+    <string name="delete_all_dialog_title">Delete all items?</string>
+    <string name="delete_all_dialog_instruct">To confirm, type \"%1$s\" into the field below.</string>
+    <string name="confirm_delete_keyword">delete</string>
+
+    <string name="use_food_dialog_title">Use food?</string>
+
+    <!-- Value labels -->
+    <string name="label_amount">Amount</string>
+    <string name="label_expiration">Expiration</string>
+    <string name="label_store">Store</string>
+    <string name="label_price">Total price</string>
+    <string name="label_photo">Photo</string>
+
+    <!-- Value hints -->
+    <string name="item_name_hint">item name</string>
+    <string name="item_amount_hint">number of</string>
+    <string name="item_expiration_hint">date</string>
+    <string name="item_store_hint">purchased at</string>
+    <string name="item_price_hint">price</string>
+
+    <!-- Strings for use food dialog -->
+    <string name="action_use_food_button">Use food</string>
+    <string name="action_use_food_cancel">Cancel</string>
+    <string name="alert_not_enough_food">You cannot use more food than you have!</string>
+
+    <!-- Button text -->
+    <string name="button_photo_change">Change photo</string>
+    <string name="button_photo_add">Add photo</string>
+
+    <!-- Value labels for view activity -->
+    <string name="view_label_expires">Expires</string>
+    <string name="view_label_price">Price</string>
+    <string name="view_label_amount">Amount left</string>
+
+</resources>

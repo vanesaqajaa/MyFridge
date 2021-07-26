@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/linear_gradient"
+            android:elevation="1dp"/>
+
+        <ImageView
+            android:id="@+id/view_food_image"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/dummy_photo"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:paddingBottom="16dp"
+        android:clipToPadding="false">
+
+    <LinearLayout
+        android:id="@+id/view_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="?android:colorBackground"
+        android:elevation="6dp"
+        android:outlineProvider="none"
+        tools:outlineProvider="bounds">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/view_food_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@android:color/black"
+                android:textSize="36sp"
+                android:layout_gravity="center_vertical"
+                tools:text="Whole milk"/>
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="sans-serif-regular"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/view_label_amount"/>
+
+                <TextView
+                    android:id="@+id/view_food_amount"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    tools:text="0.75 gal"/>
+            </LinearLayout>
+
+        <View
+            android:id="@+id/view_action_change_unit"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/convert_button"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="sans-serif-regular"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="16dp"
+                android:text="@string/view_label_price"/>
+
+            <TextView
+                android:id="@+id/view_food_price"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="16dp"
+                tools:text="$2.89 / gal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="sans-serif-regular"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="16dp"
+                android:text="@string/view_label_expires"/>
+
+            <TextView
+                android:id="@+id/view_food_expires"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="16dp"
+                tools:text="02/17/2017"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </FrameLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/action_use_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_local_dining_white_24dp" />
+
+</RelativeLayout>
